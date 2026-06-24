@@ -19,7 +19,7 @@ const LEGEND = [
 
 export default function MapPage() {
   return (
-    <div className="container section">
+    <div className="shell section">
       <SectionHead
         eyebrow="The route"
         eyebrowColor="sea"

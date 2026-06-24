@@ -9,7 +9,7 @@ export function SiteFooter() {
         marginTop: 40,
       }}
     >
-      <div className="container" style={{ padding: "56px 24px 40px" }}>
+      <div className="shell" style={{ padding: "56px 24px 40px" }}>
         <div
           style={{
             display: "grid",

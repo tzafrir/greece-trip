@@ -64,7 +64,7 @@ function Feature({
 
 export default function GuidePage() {
   return (
-    <div className="container section">
+    <div className="shell section">
       <SectionHead
         eyebrow="Good to know"
         title="The practical guide"

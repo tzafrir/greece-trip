@@ -24,7 +24,7 @@ export function SiteHeader() {
 
   return (
     <header className="site-header">
-      <div className="container site-header__inner">
+      <div className="shell site-header__inner">
         <Link href="/" className="wordmark" onClick={() => setOpen(false)}>
           <span className="eb">Greece · 21–31 Aug 2026</span>
           <span className="mk">
@@ -56,7 +56,7 @@ export function SiteHeader() {
 
       {open && (
         <div className="mobile-menu">
-          <div className="container">
+          <div className="shell">
             <nav className="nav-links" aria-label="Mobile">
               {LINKS.map((l) => (
                 <Link

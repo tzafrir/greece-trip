@@ -144,15 +144,15 @@ body {
    ============================================================ */
 a { color: inherit; text-decoration: none; }
 
-.container {
+.shell {
   max-width: var(--container);
   width: 100%;
   margin: 0 auto;
   padding-left: 24px;
   padding-right: 24px;
 }
-.container-wide { max-width: 1280px; }
-.container-narrow { max-width: var(--container-narrow); }
+.shell-wide { max-width: 1280px; }
+.shell-narrow { max-width: var(--container-narrow); }
 
 .section { padding: 72px 0; }
 .section-sm { padding: 44px 0; }
@@ -458,7 +458,7 @@ img, svg, video, canvas { max-width: 100%; }
 }
 
 @media (max-width: 480px) {
-  .container { padding-left: 16px; padding-right: 16px; }
+  .shell { padding-left: 16px; padding-right: 16px; }
   .section { padding: 40px 0; }
   .countdown { gap: 12px; }
   .cd-unit b { font-size: 25px; }

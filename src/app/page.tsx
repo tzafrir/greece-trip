@@ -47,7 +47,7 @@ export default function Home() {
       <section className="hero" style={{ minHeight: "calc(100vh - 66px)", display: "flex", alignItems: "center" }}>
         {heroImg && <div className="hero__media" style={{ backgroundImage: `url(${heroImg})` }} />}
         <div className="hero__veil" />
-        <div className="hero__inner container" style={{ padding: "72px 24px" }}>
+        <div className="hero__inner shell" style={{ padding: "72px 24px" }}>
           <Reveal>
             <span className="eyebrow" style={{ color: "var(--turq-soft)" }}>
               {TRIP.dates} · {TRIP.nights} nights · {TRIP.travelers} travelers
@@ -116,7 +116,7 @@ export default function Home() {
 
       {/* ===================== THE NUMBERS ===================== */}
       <section className="section-sm">
-        <div className="container">
+        <div className="shell">
           <Reveal>
             <p
               className="serif"
@@ -150,7 +150,7 @@ export default function Home() {
 
       {/* ===================== THE THREE MOVEMENTS ===================== */}
       <section className="section">
-        <div className="container">
+        <div className="shell">
           <SectionHead
             eyebrow="Three movements"
             title="One trip, three emotional gears"
@@ -229,7 +229,7 @@ export default function Home() {
       {/* ===================== THE ROUTE ===================== */}
       <section style={{ background: "var(--surface-sunk)" }}>
         <WaveDivider flip fill="var(--surface-sunk)" />
-        <div className="container section">
+        <div className="shell section">
           <SectionHead
             eyebrow="The route"
             eyebrowColor="sea"
@@ -253,7 +253,7 @@ export default function Home() {
       {/* ===================== FEATURED PLACES ===================== */}
       {FEATURED.length > 0 && (
         <section className="section">
-          <div className="container">
+          <div className="shell">
             <SectionHead
               eyebrow="A taste of it"
               title="Places we'll fall for"
@@ -281,7 +281,7 @@ export default function Home() {
 
       {/* ===================== THE HONEST GAP ===================== */}
       <section className="section-sm">
-        <div className="container">
+        <div className="shell">
           <Reveal>
             <div
               className="gap-band"

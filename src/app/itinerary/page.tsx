@@ -27,7 +27,7 @@ const LEGEND = [
 
 export default function ItineraryPage() {
   return (
-    <div className="container-narrow container section">
+    <div className="shell-narrow shell section">
       <SectionHead
         eyebrow="Day by day"
         title="Eleven days, three gears"

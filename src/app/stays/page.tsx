@@ -60,7 +60,7 @@ function BookingCard({
 
 export default function StaysPage() {
   return (
-    <div className="container section">
+    <div className="shell section">
       <SectionHead
         eyebrow="Where we sleep"
         title="Four stays, one gap"

@@ -27,7 +27,7 @@ const TILES: Tile[] = (() => {
 
 export default function GalleryPage() {
   return (
-    <div className="container section">
+    <div className="shell section">
       <SectionHead
         eyebrow="In pictures"
         title="The whole trip, in light"

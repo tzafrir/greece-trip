@@ -43,7 +43,7 @@ export default async function PlacesPage({
       : DESTINATIONS.filter((p) => p.movement === active);
 
   return (
-    <div className="container section">
+    <div className="shell section">
       <SectionHead
         eyebrow="Every place"
         title="Twenty places, one island and a mountain"

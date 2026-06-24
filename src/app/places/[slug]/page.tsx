@@ -65,7 +65,7 @@ export default async function PlacePage({
           <div className="hero__media" style={{ backgroundImage: `url(${hero.url})`, opacity: 0.6, mixBlendMode: "normal" }} />
         )}
         <div className="hero__veil" />
-        <div className="hero__inner container" style={{ padding: "48px 24px 44px" }}>
+        <div className="hero__inner shell" style={{ padding: "48px 24px 44px" }}>
           <Reveal>
             <Link
               href="/places"
@@ -100,7 +100,7 @@ export default async function PlacePage({
       <WaveDivider />
 
       {/* BODY */}
-      <div className="container section-sm">
+      <div className="shell section-sm">
         <div style={{ display: "grid", gridTemplateColumns: "1.6fr 1fr", gap: 44, alignItems: "start" }} className="place-cols">
           {/* main */}
           <div>
