@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { SiteHeader } from "@/components/site/SiteHeader";
+import { SiteFooter } from "@/components/site/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Greece '26 — Tzafrir & Ori",
-  description: "Trip dossier: 21–31 August 2026, 10 nights on the Ionian",
+  title: {
+    default: "Greece '26 — Tzafrir & Ori",
+    template: "%s · Greece '26",
+  },
+  description:
+    "Ten nights on the Ionian, 21–31 August 2026. A serene, low-friction escape for two — explore Kefalonia, switch off at the resort, one last adventure in Kalavryta.",
 };
 
 export default function RootLayout({
@@ -14,10 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
-          rel="preconnect"
-          href="https://fonts.googleapis.com"
-        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
@@ -28,7 +31,11 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <SiteHeader />
+        <main style={{ minHeight: "60vh" }}>{children}</main>
+        <SiteFooter />
+      </body>
     </html>
   );
 }

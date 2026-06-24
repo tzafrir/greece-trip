@@ -27,6 +27,8 @@ export function Button({
   disabled = false,
   onClick,
   style,
+  iconLeft,
+  iconRight,
 }: {
   children: React.ReactNode;
   variant?: Variant;
@@ -35,6 +37,8 @@ export function Button({
   disabled?: boolean;
   onClick?: () => void;
   style?: React.CSSProperties;
+  iconLeft?: React.ReactNode;
+  iconRight?: React.ReactNode;
 }) {
   const p = palette[variant] || palette.primary;
   const s = sizes[size] || sizes.md;
@@ -70,7 +74,9 @@ export function Button({
         ...style,
       }}
     >
+      {iconLeft}
       {children}
+      {iconRight}
     </button>
   );
 }
