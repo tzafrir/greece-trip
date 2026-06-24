@@ -187,6 +187,7 @@ export default function Home() {
                       />
                     </div>
                     <div
+                      className="mv-copy"
                       style={{
                         padding: "38px 40px",
                         display: "flex",
@@ -283,6 +284,7 @@ export default function Home() {
         <div className="container">
           <Reveal>
             <div
+              className="gap-band"
               style={{
                 background: "var(--grad-hills)",
                 borderRadius: "var(--radius-xl)",

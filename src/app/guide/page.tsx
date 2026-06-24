@@ -36,7 +36,7 @@ function Feature({
   const paras = place.summary.split(/\n\n+/).filter(Boolean);
   return (
     <Reveal>
-      <div className="card" style={{ display: "grid", gridTemplateColumns: "1fr 1.3fr", overflow: "hidden" }}>
+      <div className="card feature-card" style={{ display: "grid", gridTemplateColumns: "1fr 1.3fr", overflow: "hidden" }}>
         <div className="feature-media" style={{ position: "relative", minHeight: 260 }}>
           <ImageWithFallback src={img?.url} alt={img?.alt || place.name} gradient={fallbackGradient} label={place.name} />
         </div>
