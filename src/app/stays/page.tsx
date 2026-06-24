@@ -108,7 +108,6 @@ export default function StaysPage() {
               { label: "Ferry permission", value: "Included, all islands" },
               { label: "Free cancel", value: "≥7 days (~14 Aug)" },
             ]}
-            refs={[{ label: "Reference", value: "6XD3B6", accent: true }]}
           />
         </Reveal>
         <Reveal delay={140}>
@@ -122,10 +121,7 @@ export default function StaysPage() {
               { label: "Patras → Sami", value: "22 Aug · 13:00→16:30", mono: true },
               { label: "Sami → Patras", value: "29 Aug · 08:30→12:00", mono: true },
               { label: "Tickets", value: "Paper pickup at port" },
-            ]}
-            refs={[
-              { label: "Company code", value: "2521012486" },
-              { label: "Plate (fix)", value: "rent123", accent: true },
+              { label: "Plate", value: "Update before sailing" },
             ]}
           />
         </Reveal>
@@ -135,25 +131,34 @@ export default function StaysPage() {
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 28, alignItems: "start" }} className="map-cols">
         <Reveal>
           <div className="card" style={{ padding: "22px 24px" }}>
-            <div className="eyebrow sea" style={{ marginBottom: 14 }}>Ferry tickets</div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
-              <div>
-                <div style={{ fontSize: 12.5, color: "var(--muted)", marginBottom: 8 }}>Outbound · Patras → Sami</div>
-                <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
-                  <RefChip label="Rehan (pax)" value="L 14406878" />
-                  <RefChip label="Green (pax)" value="L 14406879" />
-                  <RefChip label="Car >4.25m" value="L 14406880" />
+            <div className="eyebrow sea" style={{ marginBottom: 14 }}>Ferry crossings</div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
+              {[
+                { dir: "Outbound · Patras → Sami", when: "22 Aug" },
+                { dir: "Return · Sami → Patras", when: "29 Aug" },
+              ].map((c, i) => (
+                <div
+                  key={c.dir}
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    gap: 12,
+                    padding: "12px 0",
+                    borderTop: i > 0 ? "1px solid var(--bone-2)" : "none",
+                  }}
+                >
+                  <div>
+                    <div style={{ fontWeight: 700, color: "var(--ink)", fontSize: 14.5 }}>{c.dir}</div>
+                    <div style={{ fontSize: 13, color: "var(--muted)" }}>2 passengers + car · lounge seats</div>
+                  </div>
+                  <span className="mono" style={{ fontSize: 12.5, color: "var(--sea-700)", fontWeight: 700, whiteSpace: "nowrap" }}>{c.when}</span>
                 </div>
-              </div>
-              <div>
-                <div style={{ fontSize: 12.5, color: "var(--muted)", marginBottom: 8 }}>Return · Sami → Patras</div>
-                <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
-                  <RefChip label="Rehan (pax)" value="L 14406881" />
-                  <RefChip label="Green (pax)" value="L 14406882" />
-                  <RefChip label="Car >4.25m" value="L 14406883" />
-                </div>
-              </div>
+              ))}
             </div>
+            <p style={{ fontSize: 12, color: "var(--muted)", margin: "14px 0 0", fontStyle: "italic" }}>
+              Ticket numbers and passenger details are kept offline.
+            </p>
           </div>
         </Reveal>
 

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { RefChip } from "@/components/travel/RefChip";
 
 export function SiteFooter() {
   return (
@@ -93,11 +92,27 @@ export function SiteFooter() {
                 marginBottom: 12,
               }}
             >
-              On hand
+              Booked
             </div>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
-              <RefChip label="Car · ACR" value="6XD3B6" accent />
-              <RefChip label="Ferries" value="2521012486" />
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+              {["Flights", "Car", "Ferries", "3 of 4 stays"].map((b) => (
+                <span
+                  key={b}
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: 6,
+                    padding: "5px 11px",
+                    borderRadius: "var(--radius-pill)",
+                    border: "1px solid rgba(255,255,255,0.16)",
+                    fontSize: 12.5,
+                    color: "#DCEDEA",
+                  }}
+                >
+                  <span style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--turq)" }} />
+                  {b}
+                </span>
+              ))}
             </div>
           </div>
         </div>

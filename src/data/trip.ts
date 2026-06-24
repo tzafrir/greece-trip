@@ -59,7 +59,7 @@ export const DAYS = [
 export const OUTSTANDING: [string, "pending" | "info"][] = [
   ["Book Kalavryta hotel (29–31 Aug)", "pending"],
   ["Obtain IDP from MEMSI before departure", "pending"],
-  ["Update ferry vehicle plate rent123 → real ACR plate", "pending"],
+  ["Update the ferry vehicle plate to the real rental plate", "pending"],
   ["Travel / medical insurance", "pending"],
   ["Collect paper ferry tickets (Patras / Sami)", "info"],
   ["Euros cash — climate tax, tolls, tavernas", "info"],

@@ -19,7 +19,7 @@ const ESSENTIALS = [
   { icon: Ticket, title: "Paper ferry tickets", body: "No e-tickets — collect paper tickets at the port. Outbound at Gate 2, Patras; return at the Sami port office. Web check-in if available." },
   { icon: Receipt, title: "Motorway tolls", body: "~€15–20 each way on the Athens–Patras motorway. Keep coins and small notes handy for the toll booths." },
   { icon: ShieldPlus, title: "Travel & medical insurance", body: "Arrange cover for the trip before leaving — including the driving and the ferry legs." },
-  { icon: Luggage, title: "Update the ferry plate", body: "The booking still lists the placeholder plate rent123 — update it to the real ACR plate via Levante / Paleologos before sailing." },
+  { icon: Luggage, title: "Update the ferry plate", body: "The booking still lists a placeholder vehicle plate — update it to the real ACR plate via Levante / Paleologos before sailing." },
 ];
 
 function Feature({
