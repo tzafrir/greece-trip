@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #FFFFFF;
+  --bone: #F6F1E6;
+  --bone-2: #EFE7D6;
+  --sand: #E4D7BD;
+  --ink: #1B2A2E;
+  --ink-2: #3B4A4E;
+  --muted: #6C787A;
+
+  --sea-900: #0C3A4E;
+  --sea-700: #134F66;
+  --sea-500: #1E7A93;
+  --sea-300: #5BA7BA;
+  --sea-100: #C8E3E9;
+
+  --turq: #2FA295;
+  --turq-soft: #BFE2DB;
+
+  --olive: #6E7A45;
+  --olive-soft: #CDD2AE;
+  --clay: #BE6740;
+  --clay-soft: #ECCAB6;
+  --gold: #D6A23E;
+
+  --green: #3F8F5B;
+
+  --text-strong: var(--ink);
+  --text-body: var(--ink-2);
+  --text-muted: var(--muted);
+  --text-onsea: #EAF4F2;
+  --text-invert: #F6F1E6;
+
+  --surface-page: var(--bone);
+  --surface-card: var(--paper);
+  --surface-sunk: var(--bone-2);
+  --surface-sea: var(--sea-900);
+
+  --border: #E0D4BC;
+  --border-strong: #CDBC9C;
+  --border-sea: #1B5468;
+
+  --primary: var(--sea-500);
+  --primary-deep: var(--sea-900);
+  --accent: var(--clay);
+  --link: var(--sea-700);
+
+  --status-booked: var(--green);
+  --status-pending: var(--clay);
+  --status-info: var(--sea-500);
+
+  --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-body: 'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Space Mono', ui-monospace, 'SFMono-Regular', monospace;
+
+  --fs-display-2xl: 84px;
+  --fs-display-xl: 64px;
+  --fs-display-lg: 48px;
+  --fs-display-md: 36px;
+  --fs-display-sm: 28px;
+
+  --fs-xl: 22px;
+  --fs-lg: 19px;
+  --fs-md: 16px;
+  --fs-sm: 14px;
+  --fs-xs: 12.5px;
+  --fs-2xs: 11px;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 800;
+
+  --lh-tight: 1.05;
+  --lh-snug: 1.22;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.7;
+
+  --tracking-eyebrow: 0.26em;
+  --tracking-label: 0.08em;
+  --tracking-tight: -0.01em;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 26px;
+  --radius-pill: 999px;
+
+  --container: 1120px;
+  --container-narrow: 760px;
+  --gutter: 24px;
+
+  --shadow-xs: 0 1px 2px rgba(27, 42, 46, 0.06);
+  --shadow-sm: 0 2px 6px rgba(27, 42, 46, 0.07);
+  --shadow-md: 0 8px 24px rgba(27, 42, 46, 0.10);
+  --shadow-lg: 0 18px 48px rgba(27, 42, 46, 0.14);
+  --shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  --ring: 0 0 0 3px rgba(47, 162, 149, 0.35);
+
+  --ease-soft: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur-fast: 140ms;
+  --dur-base: 240ms;
+  --dur-slow: 420ms;
+
+  --grad-sea: linear-gradient(160deg, #0C3A4E 0%, #134F66 45%, #1E7A93 100%);
+  --grad-dawn: linear-gradient(165deg, #1B2A3E 0%, #4A6178 40%, #C68B5C 88%, #D6A23E 100%);
+  --grad-stone: linear-gradient(180deg, #F6F1E6 0%, #EFE7D6 100%);
+  --grad-hills: linear-gradient(160deg, #4C5733 0%, #6E7A45 100%);
+
+  --rule-dotted: repeating-linear-gradient(90deg, var(--border-strong) 0 5px, transparent 5px 11px);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--surface-page);
+  font-family: var(--font-body);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+.animate-fade-in {
+  animation: fadeIn var(--dur-base) var(--ease-soft);
+}
