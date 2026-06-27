@@ -11,6 +11,9 @@ export interface ItineraryDay {
   transport?: ("flight" | "ferry" | "car")[];
   placeSlugs?: string[];
   anchor?: boolean; // a hinge day (check-in/out, crossing)
+  // Hour-by-hour, only on the days where timing actually matters
+  // (travel + the detailed last leg). Open days stay deliberately loose.
+  schedule?: { time: string; note: string }[];
 }
 
 export const ITINERARY: ItineraryDay[] = [
@@ -21,6 +24,13 @@ export const ITINERARY: ItineraryDay[] = [
     sleep: "Vrachos Suites · Aigio",
     transport: ["flight", "car"],
     placeSlugs: ["athens", "aigio"],
+    schedule: [
+      { time: "07:30", note: "Fly HFA → ATH (airHaifa, ATR-72)" },
+      { time: "10:25", note: "Land at Athens; shuttle to the ACR office, pick up the car" },
+      { time: "~11:30", note: "Drive Athens → Aigio (~150 km, ~2h)" },
+      { time: "~14:00", note: "Check in at Vrachos Suites; sea-view afternoon" },
+      { time: "eve", note: "Dinner in Aigio, early night before the ferry" },
+    ],
   },
   {
     date: "22", month: "Aug", weekday: "Saturday", movement: "transit", anchor: true,
@@ -29,6 +39,13 @@ export const ITINERARY: ItineraryDay[] = [
     sleep: "Natassa Apartments · Agia Efimia",
     transport: ["car", "ferry"],
     placeSlugs: ["patras", "ionian-ferry", "agia-efimia"],
+    schedule: [
+      { time: "~10:30", note: "Drive Aigio → Patras (~40 km, ~40 min)" },
+      { time: "~11:30", note: "Collect paper ferry tickets — Gate 2, Port of Patras" },
+      { time: "13:00", note: "Sail Patras → Sami (Levante, F/B Andreas Kalvos)" },
+      { time: "16:30", note: "Dock at Sami; drive ~15 min to Agia Efimia" },
+      { time: "~17:30", note: "Check in at Natassa Apartments; harbour dinner" },
+    ],
   },
   {
     date: "23", month: "Aug", weekday: "Sunday", movement: "explore",
@@ -58,6 +75,12 @@ export const ITINERARY: ItineraryDay[] = [
     sleep: "Ionian Emerald Resort · Karavomylos",
     transport: ["car"],
     placeSlugs: ["sami"],
+    schedule: [
+      { time: "~11:00", note: "Check out of Natassa; slow morning by the harbour" },
+      { time: "~13:30", note: "Drive Agia Efimia → Karavomylos (~20 min)" },
+      { time: "15:00", note: "Check in at the Ionian Emerald — and stop moving" },
+      { time: "eve", note: "Private beach, the first slow soak" },
+    ],
   },
   {
     date: "27", month: "Aug", weekday: "Thursday", movement: "switch",
@@ -80,6 +103,14 @@ export const ITINERARY: ItineraryDay[] = [
     sleep: "Anerada Hotel · Kalavryta",
     transport: ["ferry", "car"],
     placeSlugs: ["ionian-ferry", "patras", "cave-of-the-lakes", "planitero", "kalavryta"],
+    schedule: [
+      { time: "08:30", note: "Sail Sami → Patras (arrives 12:00)" },
+      { time: "~12:00", note: "Drive off; lunch in Patras or en route" },
+      { time: "~12:30", note: "Drive Patras → Kalavryta (~90 km, ~1.5–2h via Diakopto)" },
+      { time: "~16:00", note: "Cave of the Lakes first — it's timed (Sat closes ~17:30, €9)" },
+      { time: "~17:30", note: "Planitero springs — plane trees, cold water (or swap for the Vouraikos gorge)" },
+      { time: "eve", note: "Back to Kalavryta (~756 m, cool); check in Anerada, dinner in town" },
+    ],
   },
   {
     date: "30", month: "Aug", weekday: "Sunday", movement: "adventure", anchor: true,
@@ -88,6 +119,14 @@ export const ITINERARY: ItineraryDay[] = [
     sleep: "Avant Blue Boutique Hotel · Loutraki / Corinth",
     transport: ["car"],
     placeSlugs: ["lake-doxa", "nemea", "loutraki"],
+    schedule: [
+      { time: "~09:00", note: "Leave Kalavryta, drive east" },
+      { time: "~10:30", note: "Lake Doxa (Feneos) — chapel walk, ~1h; go early on a summer Sunday" },
+      { time: "~12:00", note: "Drive Doxa → Nemea (~1h–1h15)" },
+      { time: "~13:00", note: "Nemea — lunch, a booked winery tasting (one of us drives), then the temple & stadium" },
+      { time: "~16:00", note: "Drive Nemea → Loutraki (~50 km, ~45 min); check in at Avant Blue" },
+      { time: "eve", note: "Geraneia sunset drive, then dinner on the Loutraki promenade" },
+    ],
   },
   {
     date: "31", month: "Aug", weekday: "Monday", movement: "transit", anchor: true,
@@ -96,5 +135,15 @@ export const ITINERARY: ItineraryDay[] = [
     sleep: "Home in Haifa",
     transport: ["car", "flight"],
     placeSlugs: ["acrocorinth", "corinth-canal", "athens"],
+    schedule: [
+      { time: "~08:00", note: "Breakfast in Loutraki; check out" },
+      { time: "08:30", note: "Acrocorinth at opening — cool, empty, 360° views (closes ~15:30)" },
+      { time: "~10:15", note: "Corinth Canal bridge photo, en route" },
+      { time: "~11:00", note: "Isthmia — the submersible bridge + the ancient Diolkos" },
+      { time: "~12:15", note: "Light lunch at an Isthmia taverna" },
+      { time: "~13:00", note: "Drive Isthmus → Athens Airport (~110 km, ~1h15–1h30)" },
+      { time: "~14:30", note: "Arrive ATH; drop the ACR car (~3½h before the flight)" },
+      { time: "18:00", note: "Fly ATH → HFA (airHaifa) — home" },
+    ],
   },
 ];

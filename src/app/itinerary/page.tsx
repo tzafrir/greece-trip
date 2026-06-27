@@ -31,7 +31,7 @@ export default function ItineraryPage() {
       <SectionHead
         eyebrow="Day by day"
         title="Eleven days, three gears"
-        lead="Explore Kefalonia, switch off at the resort, one last adventure in the mountains. Tap any place to open its guide."
+        lead="Explore Kefalonia, switch off at the resort, one last adventure in the mountains. The travel and finale days carry an hour-by-hour plan; the island days stay deliberately loose. Tap any place to open its guide."
       />
 
       <div style={{ display: "flex", flexWrap: "wrap", gap: 16, marginBottom: 36 }}>
@@ -98,6 +98,28 @@ export default function ItineraryPage() {
 
                   <h3 className="serif" style={{ fontSize: 25, color: "var(--ink)", margin: "10px 0 6px" }}>{day.title}</h3>
                   <p style={{ fontSize: 15, lineHeight: 1.6, color: "var(--ink-2)", margin: 0 }}>{day.plan}</p>
+
+                  {day.schedule && day.schedule.length > 0 && (
+                    <div style={{ marginTop: 14, paddingTop: 12, borderTop: "1px solid var(--bone-2)" }}>
+                      <div style={{ fontSize: 10, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--muted)", fontWeight: 700, marginBottom: 8 }}>
+                        Hour by hour
+                      </div>
+                      <div>
+                        {day.schedule.map((s, si) => (
+                          <div key={si} style={{ display: "flex", gap: 12, padding: "5px 0", alignItems: "baseline" }}>
+                            <span
+                              className="mono"
+                              style={{ width: 54, flex: "none", textAlign: "right", fontSize: 11.5, fontWeight: 700, color: "var(--sea-700)" }}
+                            >
+                              {s.time}
+                            </span>
+                            <span style={{ width: 1, flex: "none", alignSelf: "stretch", borderLeft: `2px dotted ${color}`, opacity: 0.5 }} />
+                            <span style={{ fontSize: 13.5, lineHeight: 1.45, color: "var(--ink-2)" }}>{s.note}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
 
                   {day.placeSlugs && day.placeSlugs.length > 0 && (
                     <div style={{ display: "flex", flexWrap: "wrap", gap: 7, marginTop: 14 }}>
