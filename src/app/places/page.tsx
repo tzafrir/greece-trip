@@ -23,7 +23,7 @@ const FILTERS: { key: Movement | "all"; label: string }[] = [
 const GROUPS: { key: Movement; title: string; blurb: string }[] = [
   { key: "explore", title: "Explore — Kefalonia", blurb: "Caves, beaches, villages and a mountain, from the Agia Efimia base." },
   { key: "switch", title: "Switch off — the resort coast", blurb: "Karavomylos and Sami: the do-nothing middle of the trip." },
-  { key: "adventure", title: "One last adventure — Kalavryta", blurb: "A gorge, a cave of lakes, cold springs and a high still lake." },
+  { key: "adventure", title: "One last adventure — Kalavryta to Corinth", blurb: "Out of the mountains — a cave of lakes and cold springs — then a vineyard valley, a clifftop fortress and the Corinth coast, all on the line home." },
   { key: "transit", title: "The gateways", blurb: "The mainland hinges that hold the plan together." },
 ];
 
@@ -46,8 +46,8 @@ export default async function PlacesPage({
     <div className="shell section">
       <SectionHead
         eyebrow="Every place"
-        title="Twenty places, one island and a mountain"
-        lead="Each one researched and ready — what to do, when to go, how long it takes, and the drive from base. Filter by the gear you're in."
+        title="Every place on the trip"
+        lead="From the Ionian coves to a mountain cave to the vineyards and fortress of the Corinth gateway — each one researched and ready. Filter by the gear you're in."
       />
 
       <div style={{ display: "flex", flexWrap: "wrap", gap: 10, marginBottom: 36 }}>

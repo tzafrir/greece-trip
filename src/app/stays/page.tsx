@@ -63,12 +63,12 @@ export default function StaysPage() {
     <div className="shell section">
       <SectionHead
         eyebrow="Where we sleep"
-        title="Four stays, one gap"
-        lead="Three booked on the island and the gulf, one still open in the mountains — stated honestly. And every reference number we'll need at a port or a desk."
+        title="Five stays, all booked"
+        lead="From the gulf to the island to the mountains and the Corinth coast — every night is now reserved. The moving parts and the last bits of homework live here too."
       />
 
       {/* Stays */}
-      <div className="grid grid-4" style={{ marginBottom: 56 }}>
+      <div className="grid grid-3" style={{ marginBottom: 56 }}>
         {STAYS.map((s, i) => (
           <Reveal key={s.name} delay={i * 60}>
             <StayCard {...s} />
@@ -176,10 +176,10 @@ export default function StaysPage() {
             <div style={{ marginTop: 18, padding: "14px 16px", background: "rgba(190,103,64,0.08)", borderRadius: "var(--radius-md)", display: "flex", gap: 10, alignItems: "flex-start" }}>
               <CircleAlert size={18} strokeWidth={1.85} style={{ color: "var(--clay)", flex: "none", marginTop: 1 }} />
               <div style={{ fontSize: 13.5, color: "var(--ink-2)", lineHeight: 1.5 }}>
-                The Kalavryta hotel is the one thing still to book. Four candidates, all couple-sized.
+                All five stays are booked. The last open thread is the Nemea winery tasting — reserve ahead, and keep a driver.
               </div>
             </div>
-            <Button variant="accent" full style={{ marginTop: 16 }}>Book Kalavryta hotel</Button>
+            <Button variant="accent" full style={{ marginTop: 16 }}>Reserve the Nemea tasting</Button>
           </div>
         </Reveal>
       </div>

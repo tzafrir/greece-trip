@@ -9,7 +9,7 @@ export const MOVEMENT_META: Record<
 > = {
   explore: { label: "Explore", color: "var(--olive)", soft: "var(--olive-soft)", tagline: "Kefalonia, at our own pace" },
   switch: { label: "Switch off", color: "var(--turq)", soft: "var(--turq-soft)", tagline: "The sacred do-nothing zone" },
-  adventure: { label: "One last adventure", color: "var(--clay)", soft: "var(--clay-soft)", tagline: "A wild mountain finale" },
+  adventure: { label: "One last adventure", color: "var(--clay)", soft: "var(--clay-soft)", tagline: "The mountain roll to the Corinth gateway" },
   transit: { label: "Transit", color: "var(--sea-500)", soft: "var(--sea-100)", tagline: "Engineered to glide" },
 };
 
@@ -30,10 +30,10 @@ export const TRIP = {
 export const STATS: { num: string; label: string }[] = [
   { num: "10", label: "nights away" },
   { num: "3", label: "emotional gears" },
-  { num: "4", label: "stays booked" },
+  { num: "5", label: "stays, all booked" },
   { num: "2", label: "ferry crossings" },
-  { num: "8", label: "nights on Kefalonia" },
-  { num: "~600", label: "km of driving" },
+  { num: "7", label: "nights on Kefalonia" },
+  { num: "~700", label: "km of driving" },
 ];
 
 export const MOVEMENTS = [
@@ -59,9 +59,9 @@ export const MOVEMENTS = [
     n: "03",
     key: "adventure" as const,
     title: "One last adventure",
-    place: "Kalavryta · Peloponnese",
+    place: "Kalavryta → the Corinth gateway",
     nights: "2 nights",
-    body: "Mountains, a gorge, a high lake on the way out. Wild landscape as a finale, earned after the stillness.",
+    body: "A west-to-east roll out of the mountains — caves, springs, a high postcard lake — easing into a vineyard valley, a clifftop fortress and a seaside town a short hop from the airport. Nature leads; the culture is seasoning.",
     icon: "mountain" as const,
   },
 ];
@@ -93,6 +93,11 @@ export const GEO_STOPS: GeoStop[] = [
   { slug: "cave-of-the-lakes", name: "Cave of the Lakes", lat: 37.934, lng: 22.072, movement: "adventure", kind: "sight" },
   { slug: "vouraikos", name: "Vouraikos Gorge", lat: 38.096, lng: 22.193, movement: "adventure", kind: "sight" },
   { slug: "lake-doxa", name: "Lake Doxa", lat: 37.907, lng: 22.300, movement: "adventure", kind: "sight" },
+  { slug: "nemea", name: "Nemea", lat: 37.821, lng: 22.711, movement: "adventure", kind: "sight", label: true },
+  { slug: "loutraki", name: "Loutraki / Corinth", lat: 37.978, lng: 22.965, movement: "adventure", kind: "stay", label: true },
+  { slug: "acrocorinth", name: "Acrocorinth", lat: 37.891, lng: 22.870, movement: "adventure", kind: "sight" },
+  { slug: "corinth-canal", name: "Corinth Isthmus", lat: 37.930, lng: 22.987, movement: "adventure", kind: "sight" },
+  { slug: "ancient-corinth", name: "Ancient Corinth", lat: 37.906, lng: 22.879, movement: "adventure", kind: "sight" },
 ];
 
 // Ordered legs of the journey for the animated route line.
@@ -106,7 +111,9 @@ export const ROUTE_LEGS: RouteLeg[] = [
   { from: "sami", to: "patras", mode: "ferry" },
   { from: "patras", to: "kalavryta", mode: "drive" },
   { from: "kalavryta", to: "lake-doxa", mode: "drive" },
-  { from: "lake-doxa", to: "athens", mode: "drive" },
+  { from: "lake-doxa", to: "nemea", mode: "drive" },
+  { from: "nemea", to: "loutraki", mode: "drive" },
+  { from: "loutraki", to: "athens", mode: "drive" },
 ];
 
 export const DRIVES: { segment: string; distance: string; time: string }[] = [
@@ -116,7 +123,10 @@ export const DRIVES: { segment: string; distance: string; time: string }[] = [
   { segment: "Agia Efimia → Karavomylos", distance: "—", time: "~20 min" },
   { segment: "Sami → Patras", distance: "ferry", time: "3h30" },
   { segment: "Patras → Kalavryta", distance: "~90 km", time: "~1.5–2h" },
-  { segment: "Kalavryta → Cave of the Lakes", distance: "~17 km", time: "~30 min" },
+  { segment: "Kalavryta → Cave / Planitero", distance: "~17–25 km", time: "~30–40 min" },
   { segment: "Kalavryta → Lake Doxa", distance: "~60–70 km", time: "~1h15–1h30" },
-  { segment: "Lake Doxa → Athens", distance: "~169 km", time: "~2.5–3h" },
+  { segment: "Lake Doxa → Nemea", distance: "~50–60 km", time: "~1h–1h15" },
+  { segment: "Nemea → Loutraki", distance: "~50 km", time: "~45 min" },
+  { segment: "Loutraki → Acrocorinth", distance: "~20 km", time: "~20–25 min" },
+  { segment: "Loutraki / Isthmus → Athens (ATH)", distance: "~110 km", time: "~1h15–1h30" },
 ];

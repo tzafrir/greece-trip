@@ -30,15 +30,24 @@ export const STAYS = [
     note: "~5 min from Sami port — minimal transfer friction.",
   },
   {
-    name: "Kalavryta",
-    place: "Peloponnese",
-    dates: "29–31 Aug",
-    nights: 2,
-    status: "pending" as const,
-    statusLabel: "Not booked",
+    name: "Hotel Anerada",
+    place: "Kalavryta, Achaia",
+    dates: "29–30 Aug",
+    nights: 1,
+    status: "booked" as const,
     banner: "var(--grad-hills)",
-    tags: ["Mountain", "Spa candidates"],
-    note: "Filoxenia · Revi · Anerada · Canyon — decide & book.",
+    tags: ["Mountain", "~756 m", "Cool air"],
+    note: "Booked — base for the cave-and-springs afternoon.",
+  },
+  {
+    name: "Avant Blue Boutique Hotel",
+    place: "Loutraki / Corinth",
+    dates: "30–31 Aug",
+    nights: 1,
+    status: "booked" as const,
+    banner: "var(--grad-dawn)",
+    tags: ["Boutique", "Sea view", "Athens-gateway"],
+    note: "Booked — promenade dinner, then a short hop to the airport.",
   },
 ];
 
@@ -57,7 +66,7 @@ export const DAYS = [
 ];
 
 export const OUTSTANDING: [string, "pending" | "info"][] = [
-  ["Book Kalavryta hotel (29–31 Aug)", "pending"],
+  ["Reserve a Nemea winery tasting (book ahead; keep a driver)", "pending"],
   ["Obtain IDP from MEMSI before departure", "pending"],
   ["Update the ferry vehicle plate to the real rental plate", "pending"],
   ["Travel / medical insurance", "pending"],
@@ -65,7 +74,7 @@ export const OUTSTANDING: [string, "pending" | "info"][] = [
   ["Euros cash — climate tax, tolls, tavernas", "info"],
 ];
 
-export const ROUTE = ["Haifa", "Athens", "Patras", "Kefalonia", "Kalavryta", "Athens", "Haifa"];
+export const ROUTE = ["Haifa", "Athens", "Patras", "Kefalonia", "Kalavryta", "Corinth", "Athens", "Haifa"];
 
 export const MOVEMENTS = [
   {

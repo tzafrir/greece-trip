@@ -20,7 +20,7 @@ const heroImageFor = (slugs: string[]) => {
   return undefined;
 };
 
-const ROUTE = ["Haifa", "Athens", "Patras", "Kefalonia", "Kalavryta", "Athens", "Haifa"];
+const ROUTE = ["Haifa", "Athens", "Patras", "Kefalonia", "Kalavryta", "Corinth", "Athens", "Haifa"];
 
 const MOVEMENT_LINKS: Record<string, string> = {
   explore: "/places?movement=explore",
@@ -31,10 +31,10 @@ const MOVEMENT_LINKS: Record<string, string> = {
 const MOVEMENT_IMG: Record<string, string[]> = {
   explore: ["myrtos", "melissani", "assos", "kefalonia"],
   switch: ["sami", "antisamos"],
-  adventure: ["cave-of-the-lakes", "lake-doxa", "kalavryta", "vouraikos"],
+  adventure: ["cave-of-the-lakes", "lake-doxa", "acrocorinth", "kalavryta", "vouraikos"],
 };
 
-const FEATURED = ["myrtos", "melissani", "assos", "fiskardo", "cave-of-the-lakes", "lake-doxa"]
+const FEATURED = ["myrtos", "melissani", "assos", "cave-of-the-lakes", "nemea", "acrocorinth"]
   .map((s) => placeBySlug(s))
   .filter(Boolean);
 
@@ -279,7 +279,7 @@ export default function Home() {
         </section>
       )}
 
-      {/* ===================== THE HONEST GAP ===================== */}
+      {/* ===================== ONE THREAD LEFT ===================== */}
       <section className="section-sm">
         <div className="shell">
           <Reveal>
@@ -297,17 +297,17 @@ export default function Home() {
                 gap: 24,
               }}
             >
-              <div style={{ maxWidth: "46ch" }}>
-                <span className="eyebrow" style={{ color: "var(--clay-soft)" }}>Four stays, one gap</span>
+              <div style={{ maxWidth: "48ch" }}>
+                <span className="eyebrow" style={{ color: "var(--clay-soft)" }}>Five stays, all booked</span>
                 <h3 className="display" style={{ color: "#fff", fontSize: 34, margin: "10px 0 8px" }}>
-                  The Kalavryta nights aren&apos;t booked yet
+                  Everything&apos;s booked — one reservation left
                 </h3>
                 <p style={{ color: "#EAF0E0", fontSize: 15.5, lineHeight: 1.6, margin: 0 }}>
-                  Stated honestly — the one thing still to do. Four candidates on the shortlist, all couple-sized, all with a mountain view.
+                  Kalavryta and the Corinth coast are sorted. The last open thread is a Nemea winery tasting on the 30th — booked ahead, with one of us keeping to water for the drive.
                 </p>
               </div>
-              <Link href="/stays">
-                <Button variant="accent" size="lg">Review the stays</Button>
+              <Link href="/places/nemea">
+                <Button variant="accent" size="lg">See Nemea</Button>
               </Link>
             </div>
           </Reveal>

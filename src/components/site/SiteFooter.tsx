@@ -95,7 +95,7 @@ export function SiteFooter() {
               Booked
             </div>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-              {["Flights", "Car", "Ferries", "3 of 4 stays"].map((b) => (
+              {["Flights", "Car", "Ferries", "All 5 stays"].map((b) => (
                 <span
                   key={b}
                   style={{
@@ -132,7 +132,7 @@ export function SiteFooter() {
           }}
         >
           <span>21–31 Aug 2026 · 10 nights · 2 pax</span>
-          <span>Haifa → Athens → Patras → Kefalonia → Kalavryta → Athens → Haifa</span>
+          <span>Haifa → Athens → Patras → Kefalonia → Kalavryta → Corinth → Athens → Haifa</span>
         </div>
       </div>
     </footer>

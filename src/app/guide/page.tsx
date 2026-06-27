@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import {
-  IdCard, Coins, Ticket, Receipt, ShieldPlus, Luggage,
+  IdCard, Coins, Ticket, Receipt, ShieldPlus, Luggage, Wine,
   Sun, UtensilsCrossed, Ship,
 } from "lucide-react";
 import { SectionHead } from "@/components/site/SectionHead";
@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 };
 
 const ESSENTIALS = [
+  { icon: Wine, title: "Reserve a Nemea tasting", body: "The one booking still open. Reserve a family-winery tasting in the Nemea valley for 30 Aug ahead of time — it's a weekend — and settle who's driving before the first pour." },
   { icon: IdCard, title: "International Driving Permit", body: "Required to drive in Greece on an Israeli licence. Obtain the IDP from MEMSI before departure — carry it with the home licence." },
   { icon: Coins, title: "Cash in euros", body: "For the accommodation / climate tax paid on-site (up to ~€10/night at a 5-star in peak season), tolls, and tavernas. Reference rate €1 ≈ ₪3.37–3.39." },
   { icon: Ticket, title: "Paper ferry tickets", body: "No e-tickets — collect paper tickets at the port. Outbound at Gate 2, Patras; return at the Sami port office. Web check-in if available." },

@@ -1251,8 +1251,7 @@ export const PLACES_RAW: Omit<Place, "movement">[] = [
     ],
     "relatedDays": [
       "29 Aug",
-      "30 Aug",
-      "31 Aug"
+      "30 Aug"
     ],
     "images": [
       {
@@ -1327,7 +1326,7 @@ export const PLACES_RAW: Omit<Place, "movement">[] = [
       "Kids-free calm"
     ],
     "relatedDays": [
-      "30 Aug"
+      "29 Aug"
     ],
     "images": [
       {
@@ -1406,7 +1405,7 @@ export const PLACES_RAW: Omit<Place, "movement">[] = [
       "Photos"
     ],
     "relatedDays": [
-      "30 Aug"
+      "29 Aug"
     ],
     "images": [
       {
@@ -1494,7 +1493,7 @@ export const PLACES_RAW: Omit<Place, "movement">[] = [
       "Nature stop"
     ],
     "relatedDays": [
-      "30 Aug"
+      "29 Aug"
     ],
     "images": [
       {
@@ -1576,7 +1575,7 @@ export const PLACES_RAW: Omit<Place, "movement">[] = [
       "Slow morning"
     ],
     "relatedDays": [
-      "31 Aug"
+      "30 Aug"
     ],
     "images": [
       {
@@ -1590,6 +1589,416 @@ export const PLACES_RAW: Omit<Place, "movement">[] = [
         "credit": "Wikimedia Commons",
         "source": "Wikimedia Commons",
         "alt": "The Feneos reservoir framed by fir and oak forest"
+      }
+    ]
+  },
+  {
+    "slug": "nemea",
+    "name": "Nemea",
+    "kind": "site",
+    "region": "Corinthia",
+    "tagline": "A quiet wine valley with old stone",
+    "summary": "Nemea is the gentle version of ancient Greece — a sanctuary set in a broad farming valley where the vines outnumber the visitors. This is Agiorgitiko country, the dark Peloponnesian red, with thirty-odd family wineries scattered across the slopes. We'll book a tasting ahead and keep one of us sober at the wheel, then let the afternoon slow down among the rows.\n\nThe ruins are the seasoning, not the meal. Three lone columns of the Temple of Zeus stand in open grass, and a short walk away the ancient stadium still holds its vaulted entrance tunnel — the passage athletes walked through to the Nemean Games, their scratched graffiti still on the walls. It is rarely busy. You can stand in the tunnel mouth, look down the track, and have the place more or less to yourselves. A calm, unhurried stop on the line back toward Athens.",
+    "highlights": [
+      {
+        "title": "Temple of Zeus",
+        "text": "Three reassembled columns standing alone in open meadow — quiet, photogenic, and almost never crowded."
+      },
+      {
+        "title": "The stadium tunnel",
+        "text": "Walk the vaulted entrance arch where ancient athletes entered the track; their graffiti is still on the stone."
+      },
+      {
+        "title": "Agiorgitiko tasting",
+        "text": "Book ahead at one of the family wineries for the local red; keep a driver and take your time."
+      },
+      {
+        "title": "Site museum",
+        "text": "Small, well-kept museum at the entrance giving context to the Nemean Games before you walk out to the ruins."
+      }
+    ],
+    "practical": [
+      {
+        "label": "Drive from Loutraki",
+        "value": "~50 min"
+      },
+      {
+        "label": "Visited",
+        "value": "30 Aug, en route east"
+      },
+      {
+        "label": "Open",
+        "value": "Daily exc. Tuesday"
+      },
+      {
+        "label": "Closes",
+        "value": "~20:00 (Aug)"
+      },
+      {
+        "label": "Entry",
+        "value": "€10 (site + stadium)"
+      },
+      {
+        "label": "Time needed",
+        "value": "1-2h, plus tasting"
+      }
+    ],
+    "tips": [
+      "The €10 ticket covers the temple, museum and the stadium — but the stadium is a short drive down the road, so don't skip it.",
+      "Book the winery tasting in advance and settle who's driving before the first pour.",
+      "Morning or late afternoon is kindest; the valley bakes flat in midday August sun."
+    ],
+    "bestFor": [
+      "Wine lovers",
+      "Light-on-ruins culture",
+      "Crowd-free stops"
+    ],
+    "relatedDays": [
+      "30 Aug"
+    ],
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Nemea_Stadion_2008-09-12.jpg/3840px-Nemea_Stadion_2008-09-12.jpg",
+        "credit": "Wikimedia Commons",
+        "source": "Wikimedia Commons",
+        "alt": "The ancient stadium of Nemea with its grassy track"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Temple_of_Zeus%2C_Nemea.jpg",
+        "credit": "Wlodek Kaluza, CC BY-SA 3.0",
+        "source": "Wikimedia Commons",
+        "alt": "The standing columns of the Temple of Zeus at Nemea"
+      }
+    ],
+    "lat": 37.821,
+    "lng": 22.711
+  },
+  {
+    "slug": "loutraki",
+    "name": "Loutraki",
+    "kind": "town",
+    "region": "Corinthia",
+    "tagline": "The last calm coast before Athens",
+    "summary": "Our final base sits on the Gulf of Corinth, below the Geraneia mountains — a resort town that has quietly tended its thermal springs for a century. We are here for the easy things: a long seafront promenade, water that catches the evening light, and a short hop to the airport on our last morning. The ruins can wait; this is a place to exhale.\n\nWhat it feels like is unhurried. The promenade runs the length of the shore — cafes, old men over backgammon, families on bikes, the gulf going gold past the casino at the far end. Tuck into a dinner with the water beside you. By day the small town waterfall hides beside the 1930s spring colonnade, an artificial cascade you can walk behind through a little tunnel, the sea blue in front of you. Then up into the Geraneia for a sunset drive, the gulf opening below. No agenda, no crowds to fight.",
+    "highlights": [
+      {
+        "title": "Seafront promenade dinner",
+        "text": "The long shore walk past cafes and the casino — settle into a table with the gulf beside you at dusk."
+      },
+      {
+        "title": "The town waterfall",
+        "text": "An artificial cascade by the old spring colonnade; walk behind it through a small tunnel, sea blue in front."
+      },
+      {
+        "title": "Geraneia sunset drive",
+        "text": "Climb into the mountains behind town for the gulf going gold below — quiet, open, ours alone."
+      },
+      {
+        "title": "The 1930s spring colonnade",
+        "text": "The original Pigi spring under a semicircular building, water-nymph mosaics inside — a calm few minutes of seasoning."
+      },
+      {
+        "title": "Thermal spa, if we want it",
+        "text": "Heated thermal pools and hydrotherapy in a modern spa — a soak before the journey home, on our terms."
+      }
+    ],
+    "practical": [
+      {
+        "label": "To Athens airport",
+        "value": "~1h15-1h30 on the motorway"
+      },
+      {
+        "label": "Waterfall entry",
+        "value": "Free"
+      },
+      {
+        "label": "Waterfall time needed",
+        "value": "30-60 min"
+      },
+      {
+        "label": "Promenade",
+        "value": "Open all day, liveliest at dusk"
+      },
+      {
+        "label": "Spa",
+        "value": "Quietest on weekdays"
+      },
+      {
+        "label": "Parking",
+        "value": "Along the seafront and near the springs"
+      }
+    ],
+    "tips": [
+      "Leave the spa or waterfall for the morning of the 31st — both are five minutes from the hotel before the drive out.",
+      "Time the Geraneia drive for golden hour; the gulf below is the whole point.",
+      "Skip the casino end of the promenade unless you are curious — the calm is at the quieter stretch."
+    ],
+    "bestFor": [
+      "Promenade evenings",
+      "Sunset drives",
+      "An easy last base",
+      "Light thermal soak"
+    ],
+    "relatedDays": [
+      "30 Aug",
+      "31 Aug"
+    ],
+    "lat": 37.975,
+    "lng": 22.97666667,
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Loutraki.jpg",
+        "credit": "Wikimedia Commons",
+        "source": "Wikimedia Commons",
+        "alt": "Loutraki seafront and the Gulf of Corinth below the Geraneia mountains"
+      }
+    ]
+  },
+  {
+    "slug": "acrocorinth",
+    "name": "Acrocorinth",
+    "kind": "castle",
+    "region": "Corinthia",
+    "tagline": "A clifftop fortress on the way home",
+    "summary": "A monolithic rock above ancient Corinth, crowned by a fortress that every empire wanted: Greek, Roman, Byzantine, Frankish, Venetian, Ottoman. Each left a layer in the walls, and the layers are the point — we come for the ramparts and the long view, not a lesson. From the top the eye runs across the Corinthian Gulf, the isthmus, and the mountains, all of it laid out at once.\n\nIt feels enormous and empty, which is the gift of going early. The three gates climb in sequence, then the ground opens into a wide upland of ruined cisterns, chapels, and grass where you can wander for an hour without meeting anyone. On our last morning this is the right note — high, breezy, quiet, the gulf shining below. Not a duty to the past so much as one more good place to stand and look before the drive to the airport.",
+    "highlights": [
+      {
+        "title": "The 360 view",
+        "text": "From the summit the gulf, the isthmus and the surrounding peaks open out in every direction."
+      },
+      {
+        "title": "The three gates",
+        "text": "Climb the sequence of outer, middle and inner gates — the most concentrated stretch of the layered fortifications."
+      },
+      {
+        "title": "The upland inside",
+        "text": "Past the walls it widens into grass, ruined cisterns and small chapels you can roam almost alone."
+      },
+      {
+        "title": "Walking the ramparts",
+        "text": "Follow the walls along the cliff edges for the best vantage points and the empty-fortress feeling."
+      }
+    ],
+    "practical": [
+      {
+        "label": "Drive from Loutraki",
+        "value": "~20 min"
+      },
+      {
+        "label": "Access",
+        "value": "Drive most of the way up; free car park near the gate"
+      },
+      {
+        "label": "Entry",
+        "value": "Free"
+      },
+      {
+        "label": "Open",
+        "value": "Daily, 08:30"
+      },
+      {
+        "label": "Closes",
+        "value": "~15:30"
+      },
+      {
+        "label": "Time needed",
+        "value": "1-2h"
+      }
+    ],
+    "tips": [
+      "Go at opening — it's cool, the light is good and you'll mostly have it to yourselves.",
+      "Grippy shoes matter: the stones from the car park to the gate are smooth and slippery.",
+      "Take a hat and water; there's no shade and almost no facilities up top."
+    ],
+    "bestFor": [
+      "Long views",
+      "Quiet ramparts",
+      "Early risers",
+      "History as seasoning"
+    ],
+    "relatedDays": [
+      "31 Aug"
+    ],
+    "lat": 37.89055556,
+    "lng": 22.8725,
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Akrokorinth_nordmauern.jpg",
+        "credit": "elveoflight, CC BY 2.5",
+        "source": "Wikimedia Commons",
+        "alt": "The fortified walls and ancient entrance gate of Acrocorinth"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Acrocorinth.jpg",
+        "credit": "Juanma Pérez Rabasco, CC BY 2.0",
+        "source": "Wikimedia Commons",
+        "alt": "Panoramic view from the heights of Acrocorinth over the surrounding landscape"
+      }
+    ]
+  },
+  {
+    "slug": "corinth-canal",
+    "name": "The Corinth Isthmus",
+    "kind": "site",
+    "region": "Corinthia",
+    "tagline": "A cut through rock on the way home",
+    "summary": "The last stop before the airport, and an easy one. The canal cuts a clean line through solid rock — 6.4 km long, barely 25 m wide, walls dropping straight to the water far below. From the main road bridge you look down into it: a sliver of sea between sheer faces. Reopened to ships in June 2026 after years of stabilization work, so with luck a boat slides through while we watch.\n\nWhat makes this a fitting finale isn't grandeur, it's the quiet cleverness of the place. At Isthmia the road deck doesn't lift for ships — it sinks underwater, then floats back up, the whole thing over in about four minutes. We'll order coffee and wait for it. And near the west end the Diolkos still lies in the grass: the ancient paved haul-road where they dragged whole ships overland, cart grooves worn into the limestone. Nothing to queue for, nothing to climb. A last clever thing, then the drive in.",
+    "highlights": [
+      {
+        "title": "The main bridge",
+        "text": "Look straight down into the cut from the road bridge — sheer rock walls, a thin band of sea below."
+      },
+      {
+        "title": "A ship passing through",
+        "text": "Reopened June 2026; if a vessel transits while we're there, watch it thread the narrow channel."
+      },
+      {
+        "title": "The sinking bridge at Isthmia",
+        "text": "The road deck drops underwater to let a ship pass, then resurfaces — about four minutes, best watched over coffee."
+      },
+      {
+        "title": "The Diolkos",
+        "text": "Ancient paved ship-haul road near the west end; cart grooves still cut into the stone, freely accessible."
+      }
+    ],
+    "practical": [
+      {
+        "label": "Drive from Loutraki",
+        "value": "~20 min"
+      },
+      {
+        "label": "Entry",
+        "value": "Free"
+      },
+      {
+        "label": "Open",
+        "value": "Anytime — open-air"
+      },
+      {
+        "label": "Boat crossing",
+        "value": "~20 EUR pp, ~30 min, from Isthmia"
+      },
+      {
+        "label": "Time needed",
+        "value": "1-2h"
+      },
+      {
+        "label": "Parking",
+        "value": "Free, by the main bridge (Peloponnese side)"
+      }
+    ],
+    "tips": [
+      "The Peloponnese side of the main bridge has the parking, the cafes, and the better view down.",
+      "The sinking bridge runs on demand, not a timetable — sit at an Isthmia taverna and one will likely come.",
+      "For the Diolkos, stay on the western side; the eastern stretch sits inside a military school and needs prior permission."
+    ],
+    "bestFor": [
+      "quick photo stop",
+      "clever engineering",
+      "on the line home"
+    ],
+    "relatedDays": [
+      "31 Aug"
+    ],
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Corinth_Canal_in_Greece.jpg",
+        "credit": "Wikimedia Commons",
+        "source": "Wikimedia Commons",
+        "alt": "Looking down the length of the Corinth Canal, sheer rock walls dropping to a narrow band of water"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Corinth_Canal_2.jpg",
+        "credit": "Wikimedia Commons",
+        "source": "Wikimedia Commons",
+        "alt": "The Corinth Canal cut viewed from a bridge, steep walls flanking the waterway"
+      }
+    ],
+    "lat": 37.93,
+    "lng": 22.987
+  },
+  {
+    "slug": "ancient-corinth",
+    "name": "Ancient Corinth",
+    "kind": "site",
+    "region": "Corinthia",
+    "tagline": "Standing columns on the line home",
+    "summary": "This is the last stop before the airport, and we only take it if the morning runs ahead. Below the bulk of Acrocorinth, the Roman city lies open and walkable — the seven standing columns of the archaic Temple of Apollo anchoring everything around them, monolithic and weathered grey-gold against the rock above.\n\nWhat stays with you here is the quiet, not the history. Wander the marble forum, find the Bema where Paul is said to have spoken, and the Peirene fountain still cool in its sunken courtyard. The small museum is genuinely good and air-conditioned — a kind respite from August heat. None of it is dutiful. We come because it is serene, on the road, and asks little of us: an hour or two of standing stones and cicadas before we point the car toward Athens and let the trip close gently.",
+    "highlights": [
+      {
+        "title": "Temple of Apollo",
+        "text": "Seven monolithic Doric columns from the 6th century BC, the oldest standing thing on the site."
+      },
+      {
+        "title": "The Bema",
+        "text": "The raised stone platform where, by tradition, St Paul addressed the Corinthians."
+      },
+      {
+        "title": "Peirene fountain",
+        "text": "A sunken spring-house and courtyard, still shaded and cool in the heat of the day."
+      },
+      {
+        "title": "The museum",
+        "text": "A small, well-arranged collection with mosaics and sculpture — and welcome air conditioning."
+      },
+      {
+        "title": "Roman forum",
+        "text": "Wide marble agora to wander slowly, Acrocorinth rising behind it all."
+      }
+    ],
+    "practical": [
+      {
+        "label": "Drive from Loutraki",
+        "value": "~20 min"
+      },
+      {
+        "label": "Entry",
+        "value": "~8 euros (site + museum)"
+      },
+      {
+        "label": "Open",
+        "value": "Daily in summer"
+      },
+      {
+        "label": "Closes",
+        "value": "20:00 (summer hours)"
+      },
+      {
+        "label": "Time needed",
+        "value": "1-2h"
+      },
+      {
+        "label": "Parking",
+        "value": "Free lot at the entrance"
+      }
+    ],
+    "tips": [
+      "Go early — by mid-morning the marble throws back real heat and there's little shade.",
+      "The museum is the cool refuge; save it for when the open forum gets too bright.",
+      "Only stop if the morning's ahead of schedule; the airport drive comes first."
+    ],
+    "bestFor": [
+      "Serene ruins",
+      "Quiet history",
+      "On the way home"
+    ],
+    "relatedDays": [
+      "31 Aug"
+    ],
+    "lat": 37.9053455,
+    "lng": 22.8801924,
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Korinth_BW_2017-10-10_10-55-28.jpg",
+        "credit": "Berthold Werner, CC BY-SA",
+        "source": "Wikimedia Commons",
+        "alt": "Standing Doric columns of the Temple of Apollo at Ancient Corinth"
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Korinth_BW_2017-10-10_10-50-32.jpg",
+        "credit": "Berthold Werner, CC BY-SA",
+        "source": "Wikimedia Commons",
+        "alt": "The Temple of Apollo columns with the archaeological site of Ancient Corinth"
       }
     ]
   },
