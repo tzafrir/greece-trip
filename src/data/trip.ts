@@ -6,6 +6,8 @@ export const STAYS = [
     nights: 1,
     status: "booked" as const,
     banner: "var(--grad-dawn)",
+    bannerImage:
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/413733762.jpg?k=967f5a6e2907612a1f97a84b29dc730831b99106ed6cfa319c83b1a0d536de94&o=",
     tags: ["Sea view", "1-bedroom", "Free parking"],
     note: "Overnight before the ferry — a flight delay can’t break the plan.",
   },
@@ -16,6 +18,8 @@ export const STAYS = [
     nights: 4,
     status: "booked" as const,
     banner: "var(--grad-sea)",
+    bannerImage:
+      "https://www.natassa-apartments.com/images/kefalonia_apartments/apartments_agia_efimia_kefalonia/kefalonia_accommodation/natassa_apartments_kefalonia/stay/studios_kefalonia/1_studios_agia_efimia_kefalonia/studios_agia_efimia_kefalonia_002.jpg",
     tags: ["Studio", "Frontal sea view", "Family-run"],
     note: "Free cancellation until 23 July 2026.",
   },
@@ -26,6 +30,7 @@ export const STAYS = [
     nights: 3,
     status: "booked" as const,
     banner: "var(--grad-sea)",
+    bannerImage: "https://cdn.webhotelier.net/photos/w=1920/emerald/L14673.jpg",
     tags: ["5-star", "Spa · hammam", "Private beach"],
     note: "~5 min from Sami port — minimal transfer friction.",
   },
@@ -36,6 +41,8 @@ export const STAYS = [
     nights: 1,
     status: "booked" as const,
     banner: "var(--grad-hills)",
+    bannerImage:
+      "https://www.anerada.gr/cache/files/fde039051a8f1d4e66966ad419c46067c3f1ed41.jpg",
     tags: ["Mountain", "~756 m", "Cool air"],
     note: "Booked — base for the cave-and-springs afternoon.",
   },
@@ -46,6 +53,7 @@ export const STAYS = [
     nights: 1,
     status: "booked" as const,
     banner: "var(--grad-dawn)",
+    bannerImage: "https://avantbluehotel.gr/wp-content/uploads/2025/07/1.01-1024x684-2.jpg",
     tags: ["Boutique", "Sea view", "Athens-gateway"],
     note: "Booked — promenade dinner, then a short hop to the airport.",
   },

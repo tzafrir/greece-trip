@@ -1,5 +1,6 @@
 import { Badge } from "../core/Badge";
 import { Tag } from "../core/Tag";
+import { ImageWithFallback } from "../site/ImageWithFallback";
 
 export function StayCard({
   name,
@@ -10,6 +11,7 @@ export function StayCard({
   statusLabel,
   tags = [],
   banner = "var(--grad-sea)",
+  bannerImage,
   note,
 }: {
   name: string;
@@ -42,17 +44,30 @@ export function StayCard({
         color: "var(--ink-2)",
       }}
     >
-      <div
-        style={{
-          height: 96,
-          background: banner,
-          display: "flex",
-          alignItems: "flex-start",
-          justifyContent: "flex-end",
-          padding: 12,
-        }}
-      >
-        <Badge tone={status}>{label}</Badge>
+      <div style={{ position: "relative", height: 158, overflow: "hidden" }}>
+        <ImageWithFallback src={bannerImage} alt={name} gradient={banner} label={name} />
+        {/* soft wash so the status pill stays legible on any photo */}
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background: "linear-gradient(180deg, rgba(12,42,46,0.32) 0%, transparent 38%)",
+            zIndex: 1,
+          }}
+        />
+        <div
+          style={{
+            position: "absolute",
+            top: 12,
+            right: 12,
+            zIndex: 2,
+            background: "rgba(255,255,255,0.9)",
+            borderRadius: "var(--radius-pill)",
+            boxShadow: "var(--shadow-xs)",
+          }}
+        >
+          <Badge tone={status}>{label}</Badge>
+        </div>
       </div>
       <div style={{ padding: "16px 18px 18px" }}>
         <div
